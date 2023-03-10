@@ -1,5 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import * as firebase from 'firebase';
+
 import {
   getAuth,
   signInWithRedirect,
@@ -15,12 +17,13 @@ import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDDU4V-_QV3M8GyhC9SVieRTDM4dbiT0Yk",
-  authDomain: "crwn-clothing-db-98d4d.firebaseapp.com",
-  projectId: "crwn-clothing-db-98d4d",
-  storageBucket: "crwn-clothing-db-98d4d.appspot.com",
-  messagingSenderId: "626766232035",
-  appId: "1:626766232035:web:506621582dab103a4d08d6",
+  apiKey: "AIzaSyBgvfUVIxm74lxvX4wmtLi19bkIBELdzzo",
+  authDomain: "crwn-clothing-db-8a689.firebaseapp.com",
+  databaseURL: "https://crwn-clothing-db-8a689-default-rtdb.firebaseio.com",
+  projectId: "crwn-clothing-db-8a689",
+  storageBucket: "crwn-clothing-db-8a689.appspot.com",
+  messagingSenderId: "400070981293",
+  appId: "1:400070981293:web:e9a9adf50a8415bc5f7824"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
@@ -30,6 +33,7 @@ const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({
   prompt: "select_account",
 });
+
 
 export const auth = getAuth();
 export const signInWithGooglePopup = () =>
