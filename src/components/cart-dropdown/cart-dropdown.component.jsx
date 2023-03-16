@@ -7,6 +7,10 @@ import "./cart-dropdown.styles.scss";
 
 const CartDropdown = () => {
     const { cartItems } = useContext(CartContext);
+    const navigate = useNavigate()
+    const goToCheckoutHandler = () => {
+        navigate("/checkout")
+    }
 
     return (
         <div className="cart-dropdown-container">
@@ -19,7 +23,7 @@ const CartDropdown = () => {
                     <span className="empty-message">Your cart is empty</span>
                 )}
             </div>
-            <Button>GO TO CHECKOUT</Button>
+            <Button onClick={goToCheckoutHandler}>GO TO CHECKOUT</Button>
         </div>
     );
 };
