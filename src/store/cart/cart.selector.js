@@ -1,11 +1,14 @@
-import { createSelector } from "reselect";
+// import { createSelector } from "reselect";
 
-const newCartCount = cartItems.reduce(
-  (total, cartItem) => total + cartItem.quantity,
-  0
-);
+// const selectCartReducer = (state) => state.cart;
 
-const newCartTotal = cartItems.reduce(
-  (total, cartItem) => total + cartItem.quantity * cartItem.price,
-  0
-);
+
+// const newCartCount = cartItems.reduce(
+//   (total, cartItem) => total + cartItem.quantity,
+//   0
+// );
+
+// const newCartTotal = cartItems.reduce(
+//   (total, cartItem) => total + cartItem.quantity * cartItem.price,
+//   0
+// );
