@@ -11,7 +11,6 @@ import {
 import { selectCartItems, selectCartTotal } from '../../store/cart/cart.selector';
 
 const Checkout = () => {
-    // eslint-disable-next-line no-unused-vars
     const dispatch = useDispatch();
     const cartItems = useSelector(selectCartItems);
     const cartTotal = useSelector(selectCartTotal);
