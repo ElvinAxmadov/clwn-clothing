@@ -10,6 +10,7 @@ const Shop = () => {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(fetchCategoriesAsync());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
